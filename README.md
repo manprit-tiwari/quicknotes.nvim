@@ -7,8 +7,6 @@ windows, changing buffers, or losing focus. `quicknotes.nvim` opens your
 personal running markdown note in a clean floating window and automatically
 keeps daily sections organized.
 
----
-
 ## ✨ Features
 
 - Opens your notes in a centered floating window
@@ -17,15 +15,13 @@ keeps daily sections organized.
 - Close with `q` or `<Esc>` (just like help buffers)
 - Simple configuration. Works out of the box.
 
----
-
 ## 📦 Installation
 
 ### **lazy.nvim (recommended)**
 
 ```lua
 {
-  "manprit-tech/quicknotes.nvim",
+  "manprit-tiwari/quicknotes.nvim",
   lazy = false,
   config = function()
     require("quicknotes").setup()
@@ -37,7 +33,7 @@ keeps daily sections organized.
 
 ```lua
 use({
-  "manprit-tech/quicknotes.nvim",
+  "manprit-tiwari/quicknotes.nvim",
   config = function()
     require("quicknotes").setup()
   end,
@@ -47,11 +43,9 @@ use({
 ### vim-plug
 
 ```lua
-Plug "manprit-tech/quicknotes.nvim"
+Plug "manprit-tiwari/quicknotes.nvim"
 lua require("quicknotes").setup()
 ```
-
----
 
 ## ⚙️ Configuration (optional)
 
@@ -60,8 +54,6 @@ require("quicknotes").setup({
   dir = "~/Notes"   -- default: $DEV_HOME or $HOME/Notes
 })
 ```
-
----
 
 ## 🎯 Usage
 
@@ -75,8 +67,6 @@ When opened, the plugin will automatically:
   1. Jump to (or create) today’s date header
   1. Open notes inside a floating window
   1. Save changes when the window is closed
-
----
 
 ## 🗂 Notes Storage
 
@@ -94,8 +84,6 @@ $DEV_HOME/Notes/quick_note.md
 
 if $DEV_HOME is set.
 
----
-
 ## ✅ Future Plans
 
 - Optional daily-per-file mode
@@ -103,16 +91,10 @@ if $DEV_HOME is set.
 - Context capture (file link, selection, repo info)
 - Telescope / snacks.nvim integration
 
----
-
 ## 📝 License
 
 MIT License — see LICENSE for details.
 
----
-
 ## 💡 Contributing
 
 PRs, issues, and feature suggestions are welcome!
-
----
